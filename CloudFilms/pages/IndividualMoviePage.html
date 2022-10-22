@@ -12,7 +12,7 @@
     <meta name="Lecturer" content="Tsungai Katsuro">
     <meta name="Subject" content="DV100-Term 4">
     <meta name="Class" content="Class 1">
-    <!--& Bootstrap 5.2.1 css -->
+    <!--& Bootstrap 5.2.1 css CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!--& My css -->
@@ -32,12 +32,12 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon burger-button"></span>
                 <!-- <span class="burger-button"><img src="burger-button.svg" alt=""></span> -->
-                <span class="close-button"><img src="assets/Icons/other/close.svg" alt=""></span>
+                <span class="close-button"><img src="../assets/Icons/other/close.svg" alt=""></span>
             </button>
 
             <!--* navbar-brand for logo; me-auto aligns logo left after toggler -->
             <span class="navbar-brand ps-5 me-auto">
-                <a href="../index.html">
+                <a href="Homepage.html">
                     <img src="../assets/Images/Logo/Logo.svg" alt="logo_missing" class="logo">
                 </a>
             </span>
@@ -46,14 +46,17 @@
             <div class="collapse navbar-collapse pb-2" id="navLinkItems">
                 <!--* px-3 adds padding L&R -->
                 <div class="navbar-nav px-3">
-                    <a class="nav-link text-light mx-2" href="../index.html">Home</a>
+                    <a class="nav-link text-light mx-2" href="Homepage.html">Home</a>
                     <a class="nav-link text-light mx-2" href="../pages/LibraryPage.html">Library</a>
                     <a class="nav-link text-light mx-2" href="../pages/WatchListPage.html">Watch List</a>
-                    <!--+ Use if active element in nav is wanted -->
                 </div>
                 <!--* btn-outline-primary is bootstrap predefined button style with only outline -->
-                <button onclick="location.href = '../pages/signup_login.html';"
-                    class="btn btn-outline-primary nav-links-bold m-3 m-lg-0" type="button">Sign up</button>
+                <!-- <button onclick="location.href = '../index.html';"
+                    class="btn btn-outline-primary nav-links-bold m-3 m-lg-0" type="button">Sign up</button> -->
+                <div class="welcomeMessage" id="welcomeMessage"></div>
+                <!--* btn-outline-primary is bootstrap predefined button style with only outline -->
+                <button class="btn btn-outline-primary nav-links-bold m-3 m-lg-0" type="button" id="logOutbtn">Log
+                    Out</button>
             </div>
 
             <form class="d-flex" role="search">
@@ -96,14 +99,16 @@
                 <button type="button" class="text-light bg-dark genrebtn">Drama</button>
                 <br>
                 <br>
-                <button type="button" class="btn btn-secondary watchlaterbtn"><img src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span class="watchlatertext">WATCH LATER</span></button>
+                <button type="button" class="btn btn-secondary watchlaterbtn"><img src="../assets/Icons/other/plus.png"
+                        alt="" class="watchlatericon"><span class="watchlatertext">WATCH LATER</span></button>
                 <br>
                 <br>
                 <hr class="moviehr">
                 <span class="text-light">Director <a href="#">Joseph Kosinski</a></span>
                 <br>
                 <hr class="moviehr">
-                <span class="text-light">Stars <a href="#">Tom Cruise</a> - <a href="#">Jennifer Connelly</a> - <a href="#">Miles Teller</a></span>
+                <span class="text-light">Stars <a href="#">Tom Cruise</a> - <a href="#">Jennifer Connelly</a> - <a
+                        href="#">Miles Teller</a></span>
 
             </div>
 
@@ -116,7 +121,7 @@
         <div class="container-fluid">
 
             <span class="navbar-brand ps-5">
-                <a href="../index.html">
+                <a href="Homepage.html">
                     <img src="../assets/Images/Logo/Logo.svg" alt="logo_missing" class="logo-footer">
                 </a>
             </span>
@@ -143,11 +148,11 @@
     <!-- footer -->
 
 
-    <!--& Bootstrap 5.2.1 js bundle -->
+    <!--& Bootstrap 5.2.1 js bundle CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
-    <!--& jquery js -->
+    <!--& jquery 3.6.1 js CDN -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <!--& My js -->

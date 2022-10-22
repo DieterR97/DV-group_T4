@@ -5,109 +5,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Sign up & Log in</title>
     <!--& required meta data -->
     <meta name="Author" content="Group 3">
     <meta name="StudentNumber" content="221122,221267,221345,221243,221224">
     <meta name="Lecturer" content="Tsungai Katsuro">
     <meta name="Subject" content="DV100-Term 4">
     <meta name="Class" content="Class 1">
-    <!--& Bootstrap 5.2.1 css -->
+    <!--& Bootstrap 5.2.1 css CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!--& My css -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body onload="LoadSignup()">
 
-    <!--* working with lg breakpoint throughout; p-3 adds padding all around -->
-    <!--* navbar-expand-lg expands navbar on lg and collapses below it-->
-    <nav class="navbar navbar-expand-lg p-3 bg-linear">
-        <div class="container-fluid">
+    <div id="particles-js">
 
-            <!--* burger button for navbar elements when collapsed; targets the area : #navLinkItems -->
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navLinkItems" aria-controls="navLinkItems" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon burger-button"></span>
-                <!-- <span class="burger-button"><img src="burger-button.svg" alt=""></span> -->
-                <span class="close-button"><img src="assets/Icons/other/close.svg" alt=""></span>
-            </button>
+        <div class="container sign-up-form center-div">
+            <div class="row pt-md-5">
+                <div class="col-md-12 m-auto">
 
-            <!--* navbar-brand for logo; me-auto aligns logo left after toggler -->
-            <span class="navbar-brand ps-5 me-auto">
-                <a href="index.html">
-                    <img src="assets/Images/Logo/Logo.svg" alt="logo_missing" class="logo">
-                </a>
-            </span>
+                    <div class="card bg-black text-light">
 
-            <!--* navbar and elements to collapse when applicable -->
-            <div class="collapse navbar-collapse pb-2" id="navLinkItems">
-                <!--* px-3 adds padding L&R -->
-                <div class="navbar-nav px-3">
-                    <a class="nav-link text-light mx-2 active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link text-light mx-2" href="pages/LibraryPage.html">Library</a>
-                    <a class="nav-link text-light mx-2" href="pages/WatchListPage.html">Watch List</a>
-                    <!--+ Use if active element in nav is wanted -->
+                        <div class="card-header h3 pt-4">
+                            <img src="assets/Images/Logo/Logo Icon.svg" alt="" class="formLogo">
+                            SIGN UP
+                        </div>
+
+                        <div class="card-body">
+
+                            <form id="formSignUp">
+
+                                <div class="mb-3">
+                                    <label for="InputEmail" class="form-label h5">EMAIL ADDRESS</label>
+                                    <input type="email" class="form-control input-color text-light" id="InputEmail"
+                                        name="InputEmail" aria-describedby="emailHelp" autocomplete="off" required>
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="InputPassword" class="form-label h5">PASSWORD</label>
+                                    <input type="password" class="form-control input-color text-light"
+                                        id="InputPassword" name="InputPassword" autocomplete="off" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="InputConfirmPassword" class="form-label h5">CONFIRM PASSWORD</label>
+                                    <input type="password" class="form-control input-color text-light"
+                                        id="InputConfirmPassword" name="InputConfirmPassword" autocomplete="off"
+                                        required>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <label class="form-check-label" for="tcCheck">Agree to the following <a
+                                            class="blue_text" href="#">terms and conditions</a></label>
+                                    <input type="checkbox" class="form-check-input" id="tcCheck" name="tcCheck"
+                                        required>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg pe-5 ps-5"
+                                        id="submitSignUp">CREATE
+                                        ACCOUNT</button>
+                                </div>
+
+                            </form>
+
+                            <p class="text-center pt-4">Already have an account? <a class="blue_text" href="#"
+                                    id="ShowLoginbtn">LOG IN</a></p>
+
+                        </div>
+                        <!-- card-body -->
+                    </div>
+                    <!-- card -->
                 </div>
-                <!--* btn-outline-primary is bootstrap predefined button style with only outline -->
-                <button onclick="location.href = 'pages/signup_login.html';"
-                    class="btn btn-outline-primary nav-links-bold m-3 m-lg-0" type="button">Sign up</button>
+                <!-- col-md-6 -->
             </div>
-
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
-            </form>
-
+            <!-- row -->
         </div>
-        <!-- container-fluid -->
-    </nav>
-    <!-- navbar -->
+        <!-- container -->
 
+        <div class="container Log-in-form center-div">
+            <div class="row pt-md-5">
+                <div class="col-md-12 m-auto">
 
+                    <div class="card bg-black text-light">
 
-    <nav class="navbar fixed-bottom bg-linear">
-        <div class="container-fluid">
+                        <div class="card-header h3 pt-4">
+                            <img src="assets/Images/Logo/Logo Icon.svg" alt="" class="formLogo">
+                            LOG IN
+                        </div>
 
-            <span class="navbar-brand ps-5">
-                <a href="index.html">
-                    <img src="assets/Images/Logo/Logo.svg" alt="logo_missing" class="logo-footer">
-                </a>
-            </span>
+                        <div class="card-body">
 
-            <div class="copyright me-auto">© 2022</div>
+                            <form id="formLogIn">
 
-            <div class="footer-icons">
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img id="youtube" class="social" src="youtube.svg" />
-                </a>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img id="facebook" class="social" src="facebook.svg" />
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img id="instagram" class="social" src="instagram.svg" />
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img id="twitter" class="social" src="twitter.svg" />
-                </a>
+                                <div class="mb-3">
+                                    <label for="InputEmail" class="form-label h5">EMAIL ADDRESS</label>
+                                    <input type="email" class="form-control input-color text-light" id="InputEmailLogin"
+                                        name="InputEmailLogin" autocomplete="off" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="InputPasswordLogin" class="form-label h5">PASSWORD</label>
+                                    <input type="password" class="form-control input-color text-light"
+                                        id="InputPasswordLogin" name="InputPasswordLogin" autocomplete="off" required>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="ShowPasswordCheck">
+                                    <label class="form-check-label" for="ShowPasswordCheck">Show Password</label>
+                                </div>
+
+                            </form>
+                                
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg pe-5 ps-5" id="submitLogIn">LOG
+                                    IN</button>
+                            </div>
+
+                            <p class="text-center pt-4">New to the site? <a class="blue_text" href="#"
+                                    id="ShowSignUpbtn">CREATE NEW ACCOUNT</a></p>
+
+                        </div>
+                        <!-- card-body -->
+                    </div>
+                    <!-- card -->
+                </div>
+                <!-- col-md-6 -->
             </div>
-
+            <!-- row -->
         </div>
-    </nav>
-    <!-- footer -->
+        <!-- container -->
 
-    <!--& Bootstrap 5.2.1 js bundle -->
+    </div>
+    <!-- particles-js -->
+
+    <!--& Bootstrap 5.2.1 js bundle CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
-    <!--& jquery js -->
+    <!--& jquery 3.6.1 js CDN -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!--& jquery validation plugin .js files CDN -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <!--& My js -->
     <script src="js/index.js"></script>
-
     <!--& particles js file -->
     <script type="text/javascript" src="particles js/particles.min.js"></script>
     <script type="text/javascript" src="particles js/app.js"></script>
