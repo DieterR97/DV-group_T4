@@ -1,0 +1,152 @@
+/* Start Navbar and footer */
+.bg-linear {
+    background-image: linear-gradient(to bottom right, #161616, #2A2A2A);
+}
+
+.logo {
+    height: 50px;
+}
+
+.logo-footer {
+    height: 30px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(99,182,226, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(99, 182, 226);
+}
+
+.active {
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button[aria-expanded=true] .burger-button {
+    display: none;
+}
+
+button[aria-expanded=false] .close-button {
+    display: none;
+}
+
+.copyright {
+    color: white;
+}
+
+.social {
+    filter: invert(97%) sepia(4%) saturate(1028%) hue-rotate(308deg) brightness(111%) contrast(100%);
+    transition: 0.6s;
+}
+
+.footer-icons a {
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.welcomeMessage {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+/* End Navbar and footer */
+
+/* Start Sign Up/Login */
+/* js particles */
+#particles-js {
+    /* background-image: url("Sign_up.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+}
+
+.center-div {
+    /* margin: 0 auto; */
+    max-width: 474px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* js particles */
+
+.cards {
+    max-width: 1000px;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.blue_text {
+    color: #0097A7;
+    text-decoration: none;
+}
+
+.input-color {
+    background-color: black;
+    border: 3px solid #0097A7;
+}
+
+.card-body input:focus {
+    color: #fff;
+    background: #0097A7;
+    border: 1px solid #0097A7;
+}
+
+.formLogo {
+    width: 100px;
+    margin-right: 60px;
+}
+
+.error {
+    color: red;
+}
+
+/* End Signup/Login */
+
+/* Start Individual Movie Page */
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.individualMoviePage {
+    background-image: linear-gradient(to bottom right, #161616, #2A2A2A);
+}
+
+.MovieCover {
+    height: 500px;
+}
+
+.movieInfoContainer {
+    margin-bottom: 100px;
+}
+
+.genrebtn {
+    border-radius: 15px;
+}
+
+.watchlatericon {
+    height: 15px;
+    padding: 1px;
+}
+
+.watchlatertext {
+    padding-left: 5px;
+}
+
+.moviehr {
+    color: white;
+}
+
+/* End Individual Movie Page */

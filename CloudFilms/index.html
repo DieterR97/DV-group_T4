@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up & Log in</title>
+    <!--& required meta data -->
+    <meta name="Author" content="Group 3">
+    <meta name="StudentNumber" content="221122,221267,221345,221243,221224">
+    <meta name="Lecturer" content="Tsungai Katsuro">
+    <meta name="Subject" content="DV100-Term 4">
+    <meta name="Class" content="Class 1">
+    <!--& Bootstrap 5.2.1 css CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!--& My css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="LoadSignup()">
+
+    <div id="particles-js">
+
+        <div class="container sign-up-form center-div">
+            <div class="row pt-md-5">
+                <div class="col-md-12 m-auto">
+
+                    <div class="card bg-black text-light">
+
+                        <div class="card-header h3 pt-4">
+                            <img src="assets/Images/Logo/Logo Icon.svg" alt="" class="formLogo">
+                            SIGN UP
+                        </div>
+
+                        <div class="card-body">
+
+                            <form id="formSignUp">
+
+                                <div class="mb-3">
+                                    <label for="InputEmail" class="form-label h5">EMAIL ADDRESS</label>
+                                    <input type="email" class="form-control input-color text-light" id="InputEmail"
+                                        name="InputEmail" aria-describedby="emailHelp" autocomplete="off" required>
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="InputPassword" class="form-label h5">PASSWORD</label>
+                                    <input type="password" class="form-control input-color text-light"
+                                        id="InputPassword" name="InputPassword" autocomplete="off" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="InputConfirmPassword" class="form-label h5">CONFIRM PASSWORD</label>
+                                    <input type="password" class="form-control input-color text-light"
+                                        id="InputConfirmPassword" name="InputConfirmPassword" autocomplete="off"
+                                        required>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <label class="form-check-label" for="tcCheck">Agree to the following <a
+                                            class="blue_text" href="#">terms and conditions</a></label>
+                                    <input type="checkbox" class="form-check-input" id="tcCheck" name="tcCheck"
+                                        required>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg pe-5 ps-5"
+                                        id="submitSignUp">CREATE
+                                        ACCOUNT</button>
+                                </div>
+
+                            </form>
+
+                            <p class="text-center pt-4">Already have an account? <a class="blue_text" href="#"
+                                    id="ShowLoginbtn">LOG IN</a></p>
+
+                        </div>
+                        <!-- card-body -->
+                    </div>
+                    <!-- card -->
+                </div>
+                <!-- col-md-6 -->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+
+        <div class="container Log-in-form center-div">
+            <div class="row pt-md-5">
+                <div class="col-md-12 m-auto">
+
+                    <div class="card bg-black text-light">
+
+                        <div class="card-header h3 pt-4">
+                            <img src="assets/Images/Logo/Logo Icon.svg" alt="" class="formLogo">
+                            LOG IN
+                        </div>
+
+                        <div class="card-body">
+
+                            <form id="formLogIn">
+
+                                <div class="mb-3">
+                                    <label for="InputEmail" class="form-label h5">EMAIL ADDRESS</label>
+                                    <input type="email" class="form-control input-color text-light" id="InputEmailLogin"
+                                        name="InputEmailLogin" autocomplete="off" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="InputPasswordLogin" class="form-label h5">PASSWORD</label>
+                                    <input type="password" class="form-control input-color text-light"
+                                        id="InputPasswordLogin" name="InputPasswordLogin" autocomplete="off" required>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="ShowPasswordCheck">
+                                    <label class="form-check-label" for="ShowPasswordCheck">Show Password</label>
+                                </div>
+
+                            </form>
+                                
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg pe-5 ps-5" id="submitLogIn">LOG
+                                    IN</button>
+                            </div>
+
+                            <p class="text-center pt-4">New to the site? <a class="blue_text" href="#"
+                                    id="ShowSignUpbtn">CREATE NEW ACCOUNT</a></p>
+
+                        </div>
+                        <!-- card-body -->
+                    </div>
+                    <!-- card -->
+                </div>
+                <!-- col-md-6 -->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+
+    </div>
+    <!-- particles-js -->
+
+    <!--& Bootstrap 5.2.1 js bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <!--& jquery 3.6.1 js CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!--& jquery validation plugin .js files CDN -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <!--& My js -->
+    <script src="js/index.js"></script>
+    <!--& particles js file -->
+    <script type="text/javascript" src="particles js/particles.min.js"></script>
+    <script type="text/javascript" src="particles js/app.js"></script>
+
+</body>
+
+</html>
