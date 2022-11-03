@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!--& required meta data -->
+    <meta name="Author" content="Group 3">
+    <meta name="StudentNumber" content="221122,221267,221345,221243,221224">
+    <meta name="Lecturer" content="Tsungai Katsuro">
+    <meta name="Subject" content="DV100-Term 4">
+    <meta name="Class" content="Class 1">
+    <!--& Bootstrap 5.2.1 css CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!--& My css -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body style="background: linear-gradient(90.8deg, #161616 8.3%, #2A2A2A 100%);
+border-radius: 35px;">
+
+    <!--* working with lg breakpoint throughout; p-3 adds padding all around -->
+    <!--* navbar-expand-lg expands navbar on lg and collapses below it-->
+    <nav class="navbar navbar-expand-lg p-3 bg-linear">
+        <div class="container-fluid">
+
+            <!--* burger button for navbar elements when collapsed; targets the area : #navLinkItems -->
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navLinkItems" aria-controls="navLinkItems" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon burger-button"></span>
+                <!-- <span class="burger-button"><img src="burger-button.svg" alt=""></span> -->
+                <span class="close-button"><img src="../assets/Icons/other/close.svg" alt=""></span>
+            </button>
+
+            <!--* navbar-brand for logo; me-auto aligns logo left after toggler -->
+            <span class="navbar-brand ps-5 me-auto">
+                <a href="Homepage.html">
+                    <img src="../assets/Images/Logo/Logo.svg" alt="logo_missing" class="logo">
+                </a>
+            </span>
+
+            <!--* navbar and elements to collapse when applicable -->
+            <div class="collapse navbar-collapse pb-2" id="navLinkItems">
+                <!--* px-3 adds padding L&R -->
+                <div class="navbar-nav px-3">
+                    <a class="nav-link text-light mx-2 active" aria-current="page" href="Homepage.html">Home</a>
+                    <a class="nav-link text-light mx-2" href="LibraryPage.html">Library</a>
+                    <a class="nav-link text-light mx-2" href="WatchListPage.html">Watch List</a>
+                </div>
+                <!--* btn-outline-primary is bootstrap predefined button style with only outline -->
+                <!-- <button onclick="location.href = '../index.html';"
+                    class="btn btn-outline-primary nav-links-bold m-3 m-lg-0" type="button">Sign up</button> -->
+                <div class="welcomeMessage" id="welcomeMessage"></div>
+                <!--* btn-outline-primary is bootstrap predefined button style with only outline -->
+                <button class="btn btn-outline-primary nav-links-bold m-3 m-lg-0" type="button" id="logOutbtn">Log
+                    Out</button>
+            </div>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+
+        </div>
+        <!-- container-fluid -->
+    </nav>
+    <!-- navbar -->
+
+    <!-- header slider -->
+
+    <div data-aos="fade-left" data-aos-duration="1000" class="items">
+
+        <div class="item item1">
+            <div class="box">
+
+                <img id="movieCover0" src="" class="poster movieCover">
+
+                <div class="box3">
+                    <h1 id="movieName0">movie name</h1>
+                    <h3 id="movieInfo0" style="display: inline-block ; font-size: 16px;"> movie info </h3>
+                </div>
+
+                <div class="box4">
+                    <!-- <div id="movieGenre"></div> -->
+
+                    <button id="watchLaterbtn0" type="button" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH LATER</span></button>
+                    <button id="playButton0" type="button" class="btn btn-primary playbtn">PLAY</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="item item2">
+            <div class="box">
+
+                <img id="movieCover1" src="" class="poster movieCover">
+
+                <div class="box3">
+                    <h1 id="movieName1">movie name</h1>
+                    <h3 id="movieInfo1" style="display: inline-block ; font-size: 16px;"> movie info </h3>
+                </div>
+
+                <div class="box4">
+                    <!-- <div id="movieGenre"></div> -->
+
+                    <button id="watchLaterbtn1" type="button" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH LATER</span></button>
+                    <button id="playButton1" type="button" class="btn btn-primary playbtn">PLAY</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="item item3">
+
+            <div class="box">
+
+                <img id="movieCover2" src="" class="poster movieCover">
+
+                <div class="box3">
+                    <h1 id="movieName2">movie name</h1>
+                    <h3 id="movieInfo2" style="display: inline-block ; font-size: 16px;"> movie info </h3>
+                </div>
+
+                <div class="box4">
+                    <!-- <div id="movieGenre"></div> -->
+
+                    <button id="watchLaterbtn2" type="button" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH LATER</span></button>
+                    <button id="playButton2" type="button" class="btn btn-primary playbtn">PLAY</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header slider -->
+
+    <!-- Movie Display -->
+
+    <h3 id="Trending_Movie_Header">Popular Movies</h3>
+    <br>
+    <hr id="Trending_Line">
+    <br>
+
+    <div id="section-two">
+
+        <div id="outputrowdiv" class="row">
+
+            <div class="column">
+                <div class="LibraryFilm" id="Overlay0">
+
+                    <button type="button" id="popWatchLaterbtn0" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="btnPlay0" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="poster0" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="Overlay1">
+
+                    <button type="button" id="popWatchLaterbtn1" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="btnPlay1" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="poster1" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="Overlay2">
+
+                    <button type="button" id="popWatchLaterbtn2" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="btnPlay2" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="poster2" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="Overlay3">
+
+                    <button type="button" id="popWatchLaterbtn3" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="btnPlay3" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="poster3" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="Overlay4">
+
+                    <button type="button" id="popWatchLaterbtn4" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="btnPlay4" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="poster4" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="Overlay5">
+
+                    <button type="button" id="popWatchLaterbtn5" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="btnPlay5" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="poster5" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="Overlay6">
+
+                    <button type="button" id="popWatchLaterbtn6" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="btnPlay6" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="poster6" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="Overlay7">
+
+                    <button type="button" id="popWatchLaterbtn7" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="btnPlay7" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="poster7" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="Overlay8">
+
+                    <button type="button" id="popWatchLaterbtn8" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="btnPlay8" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="poster8" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="Overlay9">
+
+                    <button type="button" id="popWatchLaterbtn9" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="btnPlay9" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="poster9" src="" style="width:100%">
+            </div>
+
+        </div>
+
+        <br><br><br>
+
+        <h3 id="Latest_Movies_Header">Upcoming Movies</h3>
+
+        <hr id="Latest_Line">
+
+
+        <div id="outputrowdiv" class="row">
+
+            <div class="column">
+                <div class="LibraryFilm" id="lOverlay0">
+
+                    <button type="button" id="upcWatchLaterbtn0" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="upcbtnPlay0" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="lposter0" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="lOverlay1">
+
+                    <button type="button" id="upcWatchLaterbtn1" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="upcbtnPlay1" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="lposter1" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="lOverlay2">
+
+                    <button type="button" id="upcWatchLaterbtn2" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="upcbtnPlay2" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="lposter2" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="lOverlay3">
+
+                    <button type="button" id="upcWatchLaterbtn3" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span
+                            class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="upcbtnPlay3" class="btn btn-primary poster">PLAY</button>
+
+                </div>
+                <img id="lposter3" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="lOverlay4">
+            
+                    <button type="button" id="upcWatchLaterbtn4" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="upcbtnPlay4" class="btn btn-primary poster">PLAY</button>
+            
+                </div>
+                <img id="lposter4" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="lOverlay5">
+            
+                    <button type="button" id="upcWatchLaterbtn5" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="upcbtnPlay5" class="btn btn-primary poster">PLAY</button>
+            
+                </div>
+                <img id="lposter5" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="lOverlay6">
+            
+                    <button type="button" id="upcWatchLaterbtn6" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="upcbtnPlay6" class="btn btn-primary poster">PLAY</button>
+            
+                </div>
+                <img id="lposter6" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="lOverlay7">
+            
+                    <button type="button" id="upcWatchLaterbtn7" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="upcbtnPlay7" class="btn btn-primary poster">PLAY</button>
+            
+                </div>
+                <img id="lposter7" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="lOverlay8">
+            
+                    <button type="button" id="upcWatchLaterbtn8" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="upcbtnPlay8" class="btn btn-primary poster">PLAY</button>
+            
+                </div>
+                <img id="lposter8" src="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <div class="LibraryFilm" id="lOverlay9">
+            
+                    <button type="button" id="upcWatchLaterbtn9" class="btn btn-secondary watchlaterbtn"><img
+                            src="../assets/Icons/other/plus.png" alt="" class="watchlatericon"><span class="watchlatertext">WATCH
+                            LATER</span></button>
+                    <br> <br>
+                    <button type="button" id="upcbtnPlay9" class="btn btn-primary poster">PLAY</button>
+            
+                </div>
+                <img id="lposter9" src="" style="width:100%">
+            </div>
+
+        </div>
+
+
+        <nav class="navbar sticky-bottom bg-linear">
+            <div class="container-fluid">
+
+                <span class="navbar-brand ps-5">
+                    <a href="Homepage.html">
+                        <img src="../assets/Images/Logo/Logo.svg" alt="logo_missing" class="logo-footer">
+                    </a>
+                </span>
+
+                <div class="copyright me-auto">© 2022</div>
+
+                <div class="footer-icons">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img id="youtube" class="social" src="../youtube.svg" />
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img id="facebook" class="social" src="../facebook.svg" />
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img id="instagram" class="social" src="../instagram.svg" />
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <img id="twitter" class="social" src="../twitter.svg" />
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+        <!-- footer -->
+
+        <!--& Bootstrap 5.2.1 js bundle CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+        <!--& jquery 3.6.1 js CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <!--& My js -->
+        <script src="../js/index.js"></script>
+
+        <!--& particles js file -->
+        <script type="text/javascript" src="../particles js/particles.min.js"></script>
+        <script type="text/javascript" src="../particles js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,538 @@
+/* Start Navbar and footer */
+.bg-linear {
+    background-image: linear-gradient(to bottom right, #161616, #2A2A2A);
+}
+
+.logo {
+    height: 50px;
+}
+
+.logo-footer {
+    height: 30px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(99,182,226, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(99, 182, 226);
+}
+
+.active {
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button[aria-expanded=true] .burger-button {
+    display: none;
+}
+
+button[aria-expanded=false] .close-button {
+    display: none;
+}
+
+.copyright {
+    color: white;
+}
+
+.social {
+    filter: invert(97%) sepia(4%) saturate(1028%) hue-rotate(308deg) brightness(111%) contrast(100%);
+    transition: 0.6s;
+}
+
+.footer-icons a {
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.welcomeMessage {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+/* End Navbar and footer */
+
+/* Start Sign Up/Login */
+/* js particles */
+#particles-js {
+    /* background-image: url("Sign_up.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+}
+
+.center-div {
+    /* margin: 0 auto; */
+    max-width: 474px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* js particles */
+
+.cards {
+    max-width: 1000px;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.blue_text {
+    color: #0097A7;
+    text-decoration: none;
+}
+
+.input-color {
+    background-color: black;
+    border: 3px solid #0097A7;
+}
+
+.card-body input:focus {
+    color: #fff;
+    background: #0097A7;
+    border: 1px solid #0097A7;
+}
+
+.formLogo {
+    width: 100px;
+    margin-right: 60px;
+}
+
+.error {
+    color: red;
+}
+
+/* End Signup/Login */
+
+/* Start Individual Movie Page */
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.individualMoviePage {
+    background-image: linear-gradient(to bottom right, #161616, #2A2A2A);
+}
+
+.MovieCover {
+    height: 500px;
+}
+
+.movieInfoContainer {
+    margin-bottom: 100px;
+}
+
+.genrebtn {
+    border-radius: 15px;
+}
+
+.watchlatericon {
+    height: 15px;
+    padding: 1px;
+}
+
+.watchlatertext {
+    padding-left: 5px;
+}
+
+.moviehr {
+    color: white;
+}
+
+.left {
+    float: left;
+}
+
+.genrebtn {
+    border-radius: 25px;
+    border: 2px solid rgb(131, 131, 131);
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.genrebtn:hover {
+    background-color: gray;
+}
+
+.rating {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.rating10 {
+    color: gray;
+}
+
+.star {
+    height: 30px;
+    padding: 3px;
+}
+
+/* End Individual Movie Page */
+
+/* Watch list css starts*/
+h4 {
+
+    font-size: 50px;
+    color: white;
+    margin-left: 600px;
+    text-decoration-line: underline;
+}
+
+.box1wl {
+    position: relative;
+    width: 1350px;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 10px;
+    border: white;
+}
+
+#movieposter-wl {
+    position: absolute;
+    height: 400px;
+    width: 280px;
+    background-color: #5c5c5c;
+    margin-left: 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+.title {
+    position: relative;
+    margin-left: 320px;
+    color: #ffffff;
+}
+
+.overview {
+    position: relative;
+    margin-left: 320px;
+    color: rgb(255, 255, 255);
+}
+
+.releasedate {
+    position: relative;
+    margin-left: 320px;
+    color: rgb(255, 255, 255);
+}
+
+.runtime {
+    position: relative;
+    margin-left: 320px;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    /* font-size: x-large; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.playwl-btn {
+    width: 100px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(94.67deg, #123996 0%, #0863AE 100%);
+    border-radius: 10px;
+}
+
+
+.remove-btn {
+    position: sticky;
+    color: #fff;
+    background: linear-gradient(94.67deg, #777777 0%, #343434 100%);
+    margin-top: 100px;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+.remove-all {
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 400px;
+    margin-left: 1300px;
+    color: white;
+    background: linear-gradient(94.67deg, #777777 0%, #343434 100%);
+}
+
+
+.hline {
+    position: relative;
+    width: 1720px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-left: -400px;
+
+}
+
+/* Watch list css ends*/
+
+/* Slider Start */
+
+.items {
+    left: 50px;
+    top: 50px;
+    height: 350px;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    user-select: none;
+    cursor: default;
+    transition: all 0.2s;
+    position: relative;
+    background: none;
+    transform: scale(400px);
+    perspective: 500px;
+
+
+}
+
+.items.active {
+    cursor: default;
+    cursor: -webkit-grabbing;
+
+}
+
+.item {
+    position: relative;
+    width: 800px;
+    height: 350px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-color: none;
+    margin-right: 0px;
+    border-radius: 0px;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.box {
+
+    position: absolute;
+    width: 750px;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: linear-gradient(77.03deg, #373737 0%, #222222 96.35%);
+    border-radius: 25px;
+    white-space: normal;
+
+}
+
+#movieCover0 {
+    position: absolute;
+    width: 211px;
+    height: 313px;
+    left: 18px;
+    top: 18px;
+    background-color: #fff;
+    border-radius: 18px;
+
+}
+
+#movieCover1 {
+    position: absolute;
+    width: 211px;
+    height: 313px;
+    left: 18px;
+    top: 18px;
+    background-color: #fff;
+    border-radius: 18px;
+}
+
+#movieCover2 {
+    position: absolute;
+    width: 211px;
+    height: 313px;
+    left: 18px;
+    top: 18px;
+    background-color: #fff;
+    border-radius: 18px;
+}
+
+.movieCover {
+    position: absolute;
+    width: 211px;
+    height: 313px;
+    left: 18px;
+    top: 18px;
+    background-color: #fff;
+    border-radius: 18px;
+}
+
+.box3 {
+    position: absolute;
+    width: 450px;
+    height: 200px;
+    left: 270px;
+    top: 20px;
+    background-color: none;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.box4 {
+    position: absolute;
+    width: 450px;
+    height: 100px;
+    left: 270px;
+    top: 230px;
+    background-color: none;
+}
+
+#Trending_Movie_Header {
+
+    position: relative;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    left: 50px;
+    top: 80px;
+}
+
+#Trending_Line {
+
+    position: relative;
+    width: 237px;
+    height: 5px;
+    background: linear-gradient(90deg, #095796 0.84%, rgba(9, 87, 150, 0) 100%);
+    border-radius: 7px;
+    left: 50px;
+    top: 40px;
+
+}
+
+#Latest_Movies_Header {
+
+    position: relative;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    color: white;
+    left: 50px;
+
+}
+
+
+#Latest_Line {
+
+    position: relative;
+    width: 237px;
+    height: 5px;
+    background: linear-gradient(90deg, #095796 0.84%, rgba(9, 87, 150, 0) 100%);
+    border-radius: 7px;
+    left: 50px;
+    top: -8px;
+
+}
+
+/* Library page */
+
+#section-one {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    left: 3%;
+    width: 180px;
+    height: 40px;
+    background-color: #181818;
+    border-radius: 0px;
+    color: white;
+
+}
+
+.input {
+    position: absolute;
+    background: none;
+    border: 0px solid #000000;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    background-color: #181818;
+    border-radius: 0px;
+    color: white;
+
+}
+
+
+#section-two {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.column {
+    float: left;
+    width: 277px;
+    height: 277px;
+    padding-top: 40px;
+    padding-bottom: 300px;
+    padding-left: 65px;
+
+    background-color: none;
+}
+
+/* Clear floats after image containers */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+.LibraryFilm {
+    position: absolute;
+
+    width: 200px;
+    height: 296px;
+    opacity: 0;
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 24px;
+    font: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+
+}
+
+.LibraryFilm:hover {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    cursor: default;
+
+}
